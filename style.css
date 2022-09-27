@@ -1,0 +1,116 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    display:flex;
+    flex-direction: column;
+    font-family: Outfit;
+    font-size: 18px;
+}
+
+.container{
+    max-width: 300px;
+    border-radius: 15px;
+    padding:25px;
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(216, 50%, 16%);
+    margin: 200px auto 100px;
+    box-shadow: 0 22px 5px 20px hsl(218, 53%, 10%);
+}
+
+#card_pack{
+    max-width: inherit;
+    height:300px
+}
+
+#card_highlight{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: cyan;
+    border-radius: 10px;
+    opacity: 0;
+    z-index: 2;
+}
+#card_highlight:hover{
+    opacity:1;
+    background-color: rgba(0, 255, 255, 0.55);
+}
+#card_view{
+    position: absolute;
+    width: inherit;
+    transform: scale(.15);
+    z-index: 3;
+}
+#card_main{
+    border-radius: 10px;
+    max-width: inherit;
+    position: relative;
+}
+#card_main:hover{
+    z-index: 1;
+}
+#card_title{
+    color: hsl(0, 0%, 100%);
+    font-size:20px;
+}
+#card_title:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+#dailies{
+    display: flex;
+    align-items: center;
+}
+#value{
+    display: inherit;
+    color: hsl(178, 100%, 50%);
+    vertical-align: middle;
+    padding-right:30%;
+}
+#ic_ether{
+    position:relative;
+    top: 3px;
+    height: 18px;
+    padding-right: 7px;
+}
+#ic_clock{
+    padding-right: 6px;
+}
+
+hr{
+    color: hsl(215, 51%, 70%);
+}
+
+.author{
+    display: flex;
+    align-items: left;
+    height:45px;
+    padding: 0;
+    font-size: medium;
+}
+#creator{
+    margin:auto 5px;
+}
+.author span{
+    color:white;
+}
+.author span:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+#profile_avatar{
+transform: scale(0.8);
+position:relative;
+right:5px;
+background-color: white;
+padding:1px;
+border-radius: 50%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
